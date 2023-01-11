@@ -1,15 +1,21 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-const tail = function (arr) {
-  const copyWithoutFirst = arr.slice(1);
-  return copyWithoutFirst;
-};
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+// const assertEqual = function (actual, expected) {
+//   if (actual === expected) {
+//     console.log(`Assertion Passed: ${actual} === ${expected}`);
+//   } else if (actual !== expected) {
+//     console.log(`Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
+// const tail = function (arr) {
+//   const copyWithoutFirst = arr.slice(1);
+//   return copyWithoutFirst;
+// };
+// // Test Case: Check the original array
+// const words = ["Yo Yo", "Lighthouse", "Labs"];
+// tail(words); // no need to capture the return value since we are not checking it
+// assertEqual(words.length, 3); // original array should still have 3 elements!
+x = 12;
+if (true) {
+  x + 2;
+  x = 4;
+}
+console.log(x);
