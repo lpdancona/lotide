@@ -18,10 +18,17 @@ const eqObjects = function (object1, object2) {
     if (typeof object1[p] !== "object") return false;
     if (!object_equals(object1[p], object2[p])) return false;
   }
+
   for (p in object2)
     if (object2.hasOwnProperty(p) && !object1.hasOwnProperty(p)) return false;
   return true;
 };
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
-console.log(object_equals(shirtObject, anotherShirtObject));
+console.log(eqObjects(shirtObject, anotherShirtObject));
+const longSleeveShirtObject = {
+  size: "medium",
+  color: "red",
+  sleeveLength: "long",
+};
+console.log(eqObjects(shirtObject, longSleeveShirtObject));
