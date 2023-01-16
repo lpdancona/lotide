@@ -8,6 +8,7 @@ const without = function (source, itemsToRemove) {
   }
   return newArr;
 };
+module.exports = without;
 const assertEqual = function (actual, expected) {
   if (JSON.stringify(actual) === JSON.stringify(expected))
     console.log(`Assertion Passed: ${actual} does match ${expected}`);

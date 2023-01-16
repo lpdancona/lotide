@@ -9,6 +9,8 @@ const assertEqual = function (actual, expected) {
 function findKeyByValue(object, value) {
   return Object.keys(object).find((key) => object[key] === value);
 }
+module.exports = findKeyByValue;
+
 const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
