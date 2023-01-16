@@ -10,11 +10,3 @@ function findKeyByValue(object, value) {
   return Object.keys(object).find((key) => object[key] === value);
 }
 module.exports = findKeyByValue;
-
-const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama: "The Wire",
-};
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-console.log(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);

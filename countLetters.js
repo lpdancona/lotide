@@ -21,12 +21,3 @@ const countLetters = function (word, wordsToCount) {
   console.log(result);
   return result;
 };
-module.exports = countLetters;
-const firstNames = "lighthouse Labs";
-
-const result1 = countLetters(firstNames, {
-  a: true,
-  k: true,
-  f: true,
-  g: false,
-});

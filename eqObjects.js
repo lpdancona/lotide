@@ -23,14 +23,5 @@ const eqObjects = function (object1, object2) {
     if (object2.hasOwnProperty(p) && !object1.hasOwnProperty(p)) return false;
   return true;
 };
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-console.log(eqObjects(shirtObject, anotherShirtObject));
-const longSleeveShirtObject = {
-  size: "medium",
-  color: "red",
-  sleeveLength: "long",
-};
-module.exports = eqObjects;
 
-console.log(eqObjects(shirtObject, longSleeveShirtObject));
+module.exports = eqObjects;

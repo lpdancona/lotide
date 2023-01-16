@@ -17,6 +17,3 @@ const sum2 = function (x) {
   x = x + 2;
   return x;
 };
-const numb = [93, 698, 3, 150, 290, 50, 885, 98, 6, 7, 42];
-const words = ["ground", "ground", "ground"];
-console.log(map(numb, sum2));
