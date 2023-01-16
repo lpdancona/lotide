@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertArraysEqual = function (actual, expected) {
   if (JSON.stringify(actual) === JSON.stringify(expected))
     console.log(`Assertion Passed: ${actual} does match ${expected}`);
   else console.log(`Assertion Failed: ${actual} does not match ${expected}`);
@@ -16,6 +16,5 @@ const middle = function (arr) {
     return [arr[index]];
   }
 };
-console.log(middle([1]));
-console.log(middle([1, 2, 3]));
-console.log(middle([1, 2, 3, 4, 5, 6]));
+module.exports = assertArraysEqual;
+module.exports = middle;
